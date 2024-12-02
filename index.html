@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spending Analysis</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="divisor">
+                <div id="periode"></div>
+                <div id="qty"></div>
+            </div>
+            <div class="divisor">
+                <div id="date"></div>
+                <div id="money"></div>
+            </div>
+        </header>
+
+        <section>
+            <canvas id="myChart"></canvas>
+            <table id="table" style="width: 100%">
+                <tr>
+                    <th>Date</th>
+                    <th>Nom</th>
+                    <th>Montant</th>
+                </tr>
+            </table>
+            <input type="file" id="csvInput" accept=".csv" />
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
